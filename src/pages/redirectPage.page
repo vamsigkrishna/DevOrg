@@ -1,0 +1,9 @@
+<apex:page showHeader="false" sidebar="false" >
+
+<script>
+    window.onload=function(){window.location = "https://www.google.com";};
+    
+    
+</script>
+
+</apex:page>

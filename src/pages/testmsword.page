@@ -1,0 +1,157 @@
+<apex:page standardController="account" sidebar="false" showHeader="false" contentType="application/msword#test.docx">
+<apex:form >
+<html>
+<table border="0" width="100%" height="90px">
+   <tr>
+     <td  >
+       <center>
+        <img  src="https://c.cs6.content.force.com/servlet/servlet.ImageServer?id=015N00000005pvq&oid=00DN00000003T5w&lastMod=1390381612000" title="logo"/>
+      </center>
+     </td>
+     <td   style="font-size:13px" align="right">
+      <center>
+       <b>
+            <font color="white">….</font>Z.I. Les Bracots – 74890 BONS-EN-CHABLAIS – FRANCE<br/>
+            <font color="white"></font>Tel : (33) (0)4 50 36 13 85 - Fax : (33) (0)4 50 36 11 33<br/>
+            <font color="white">….</font> http://www.nicomatic.com E-mail : nicomatic@nicomatic.fr
+       </b>
+      </center>
+     </td>
+    </tr>
+</table><br/><br/>
+<table border="0" width="100%" height="100%" style="padding-left:30px;">
+     <tr >
+       <td style="font-size:13px">
+        Dear Sir, Dear Madam,<br/><br/>
+        To handle your orders, quotations and related questions, we need some details to create your account <br/>number such as:
+       </td>
+     </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  Company name: <apex:outputField value="{!Account.name}"/>
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  Useful addresses:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:60px;">
+        -    invoicing address:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:60px;">
+        -   headquarters address:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:60px;">
+        -   delivery address:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  phone number:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  fax number:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  website:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •  Intra-EEC VAT number if necessary:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •   Our contact people and their emails, tel.numbers  in your company:
+        </td>
+       </tr>
+       </table>
+       <table  border="0" width="100%" height="100%" style="padding-left:30px;">
+        <tr>
+       <td style="font-size:13px;padding-left:45px;">
+            - CEO: CEO <br/>                                             
+              Mr/Mrs/Ms <br/>                                                                                          
+              tel.:
+        </td>
+        <td>
+         Email :
+        </td>
+       </tr>
+       <tr >
+       <td style="font-size:13px;padding-left:45px;">
+             - Purchase department: Purchaser<br/>                 
+               Mr/Mrs/Ms <br/>                                                                                                                                                                                   
+              tel.:<br/>
+        </td>
+          <td>
+         Email :
+        </td>
+       </tr>
+       <tr >
+       <td style="font-size:13px;padding-left:45px;">
+            - Accounting department: Accountant<br/>                 
+              Mr/Mrs/Ms   <br/>                                                                                                                                                                                  
+              tel.:<br/>
+        </td>
+          <td>
+         Email :
+        </td>
+       </tr>
+       </table><br/><br/>
+       <table  border="0" width="100%" height="100%" style="padding-left:30px;">
+       <tr >
+        <td style="font-size:13px;padding-left:30px;">
+        •   Your company  main activity: 
+        </td>
+       </tr>
+              <tr>
+        <td style="font-size:13px;padding-left:30px;">
+        •   Your forwarder (our goods are quoted EXW).
+        </td>
+       </tr>
+        <tr >
+        <td style="font-size:13px;padding-left:45px;">
+        -   Name:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:45px;">
+        -   Address and contact in France:
+        </td>
+       </tr>
+       <tr >
+        <td style="font-size:13px;padding-left:45px;">
+        -   Your Account number:
+        </td>
+       </tr>
+       </table>
+       <table  border="0" width="100%" height="100%" style="padding-left:30px;">
+       <tr >
+       <td style="font-size:13px">
+        Your contact in Nicomatic SA :<br/>
+        Ms. Tatyana CHIRINA
+       </td>
+     </tr>
+     </table>
+     <table  border="0" width="100%" height="100%" style="padding-left:30px;">
+      <tr >
+       <td style="font-size:13px">
+        Tel: +33 (4)50.36.17.84 <br/>
+        Fax: +33 (4)50.36.11.33
+       </td>
+     </tr>
+</table>
+</html>
+</apex:form>
+</apex:page>

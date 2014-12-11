@@ -1,0 +1,17 @@
+<apex:page controller="leadtest" >
+<apex:form >
+<apex:pageBlock >
+  <apex:tabPanel >
+        <apex:tab >
+            <apex:pagemessage severity="info"></apex:pagemessage>
+        </apex:tab>   
+        <apex:tab >
+            <apex:pagemessage severity="info"></apex:pagemessage>
+        </apex:tab>  
+  </apex:tabPanel>
+  <apex:pageBlockButtons >
+      <apex:commandButton value="Save" action="{!save}"/>
+  </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

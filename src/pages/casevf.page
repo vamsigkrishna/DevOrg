@@ -1,0 +1,4 @@
+<apex:page standardController="Case" extensions="caseExtn" >
+    <apex:outputLabel value="here is the url"></apex:outputLabel>
+    <apex:outputLabel value="{!CasePageURL}"></apex:outputLabel>
+</apex:page>

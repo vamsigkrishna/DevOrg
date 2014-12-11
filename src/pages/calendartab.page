@@ -1,0 +1,8 @@
+<apex:page >
+<script language="JavaScript">
+function redirect() {
+parent.frames.location.replace("https://vamsikrishna-dev-ed.my.salesforce.com/00U/c?ctype=1&md0=2014&md1=7")
+}
+redirect();
+</script>
+</apex:page>

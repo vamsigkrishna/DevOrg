@@ -1,0 +1,20 @@
+{
+    "username": "krishna.gv@gmail.com", 
+    "environment": "developer", 
+    "project_name": "DevOrg", 
+    "workspace": "/users/vgosu/documents/vamsi/workspace", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "ZI54WVYFD380FWR2522A2KPGUWL963UX", 
+    "metadata_container": "1dc90000000LfpUAAS", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource", 
+        "Workflow"
+    ]
+}

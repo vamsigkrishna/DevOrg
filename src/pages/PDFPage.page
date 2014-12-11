@@ -1,0 +1,100 @@
+<apex:page showheader="false" sidebar="false" standardStylesheets="false" controller="PDFPageController" >
+<apex:form >
+<table>
+<tr>
+<td width="25%"></td>
+<td width="50%">
+<img src="https://autogenie.s3-ap-southeast-2.amazonaws.com/assets/logo_new-a23099a17f943c2dd4503f1719d82bdc.png" align="middle"/>
+</td>
+<td width="25%"></td>
+</tr>
+</table>
+
+<apex:pageBlock >
+<table border="1" cellspacing="0">
+<thead>
+<tr>
+<th>Price Type</th>
+<apex:repeat value="{!DealerInfo}" var="d">
+<th><apex:outputText value="{!d.DealerName}"/></th>
+</apex:repeat>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List Price (excl GST)</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Discount</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Sub Total</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Delivery</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Sub Total</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Total GST</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Total LCT</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>12 Months Reg and Plate Fee</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>CTP Insurance</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Other Registration Fee</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Stamp Duty</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+<tr>
+<td>Total New Vehicle</td>
+<apex:repeat value="{!DealerInfo}" var="d">
+<td><apex:outputText value="{!d.ListPrice}"/></td>
+</apex:repeat>
+</tr>
+</tbody>
+</table>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page standardController="Case" >
+
+<apex:relatedList list="InternalComments"/>
+
+</apex:page>

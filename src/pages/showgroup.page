@@ -1,0 +1,7 @@
+<apex:page controller="showGroupController" >
+<apex:form >
+<apex:selectList value="{!SelectedGroups }">
+    <apex:selectOptions value="{!AllPublicGroups}"/>
+</apex:selectList>
+</apex:form>
+</apex:page>

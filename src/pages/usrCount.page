@@ -1,0 +1,9 @@
+<apex:page controller="usrCountController" >
+  <apex:pageBlock >
+  <apex:pageBlockTable value="{!UsersCountMap}" var="key"> 
+     <apex:column value="{!key}"/>
+     <apex:column value="{!UsersCountMap[key]}" />
+     
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>

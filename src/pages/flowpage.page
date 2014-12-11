@@ -1,0 +1,18 @@
+<apex:page controller="FlowController" standardStylesheets="True" showHeader="False" sidebar="False">
+
+<style>
+
+.FlowPageBlockBtns .FlowFinishBtn{
+
+color:red;
+text-align:center;
+
+}
+</style>
+
+
+<flow:interview name="myflow">
+       
+</flow:interview>
+
+</apex:page>

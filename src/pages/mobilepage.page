@@ -1,0 +1,12 @@
+<apex:page controller="MobilePDFController" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: mobilepage
+  <!-- End Default Content REMOVE THIS -->
+  <br/><br/><br/>
+  <apex:form >
+  <apex:inputCheckbox >Is this your current device ? </apex:inputCheckbox>
+  <apex:commandButton value="Send PDF" action="{!sendPDF}"/>
+  <apex:pageMessages ></apex:pageMessages>
+  </apex:form>
+</apex:page>

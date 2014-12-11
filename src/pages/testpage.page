@@ -1,0 +1,7 @@
+<apex:page id="thePage" sidebar="false" standardController="account">
+<apex:includeScript value="{!URLFOR($Resource.jqueryui, 'jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}"  />
+<apex:includeScript value="{!URLFOR($Resource.jqueryui, 'jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}"  />
+<apex:stylesheet value="{!URLFOR($Resource.jqueryui, 'jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.css')}"  />
+<apex:outputField value="{!account.billingcountry}"/>
+
+</apex:page>

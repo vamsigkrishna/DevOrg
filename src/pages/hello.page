@@ -1,0 +1,5 @@
+<apex:page standardController="Case" >
+<apex:form >
+   <apex:inputField value="{!Case.Contact.Email}"/>
+</apex:form>
+</apex:page>

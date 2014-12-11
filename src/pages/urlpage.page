@@ -1,0 +1,12 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: urlfordemo
+  <!-- End Default Content REMOVE THIS --><br/>
+  <apex:form >
+  <apex:outputLink value="{!urlfor('apex/urlfordemo')}" target="new"> go to same page</apex:outputLink> <br/>
+  <apex:commandButton value="New" action="{!URLFOR($Action.Account.New)}"/>
+ 
+ 
+ </apex:form>
+</apex:page>

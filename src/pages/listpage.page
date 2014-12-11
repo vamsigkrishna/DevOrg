@@ -1,0 +1,14 @@
+<apex:page controller="slist">
+    <apex:form >
+       <apex:pageblock title="Custom list controller" >
+     
+          <apex:pageBlockSection >
+             
+          <apex:dataList var="student" value="{!Students}">
+               <apex:outputText value="{!Student}" />    
+          </apex:dataList>
+          
+          </apex:pageBlockSection>
+       </apex:pageblock>
+    </apex:form> 
+</apex:page>

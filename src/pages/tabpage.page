@@ -1,0 +1,22 @@
+<apex:page id="thePage" standardController="Lead" docType="html-5.0">
+    <apex:form >
+    <apex:tabPanel switchType="client" selectedTab="name2" id="theTabPanel">
+        <apex:tab label="One" name="name1" id="tabOne">
+            content for tab one
+            <apex:inputField type="email" value="{!Lead.Email}"/>
+            <apex:pageblock >
+        <apex:pageblockTable value="{!Lead}" var="ld">
+            <apex:column headerValue="Lead Name">{!ld.Name}</apex:column>
+        </apex:pageblockTable>
+        </apex:pageblock>
+        <apex:actionRegion >
+        <apex:inputField value="{!Lead.Primary__c}" onchange="">
+             <apex:actionSupport event="onchange" reRender="txt"/>
+        </apex:inputField>  
+        </apex:actionRegion>   
+        <apex:inputText id="txt" rendered="{!Lead.Primary__c == 'No'}"/>
+        </apex:tab>
+        <apex:tab label="Two" name="name2" id="tabTwo">content for tab two</apex:tab>
+    </apex:tabPanel>
+    </apex:form>
+</apex:page>

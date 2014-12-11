@@ -1,0 +1,25 @@
+<apex:page controller="dataTableCon"  id="thePage" showHeader="false" standardStylesheets="false" sidebar="false" applyBodyTag="false">
+<script>
+function testJ(){
+alert("I am J");
+return true;
+}
+</script>
+ <apex:form >
+    <apex:commandButton value="test" action="{!testM}" onclick="return testJ();"/>
+    <apex:dataTable value="{!Accounts}" var="account" id="theTable" bgcolor="lightblue" border="5">
+      <apex:column >
+        <apex:repeat value="{!account.CaseComments}" var="account">
+          <apex:inputtext value="{!account.CommentBody}"  title="Save after editing comments"  size="70" /> 
+        </apex:repeat>
+     </apex:column>
+          <apex:column >
+            <apex:pageBlock >  
+                <apex:commandButton action="{!save}" value="Update"  />
+                <apex:commandButton action="{!del}" value="Delete" />
+              <apex:pageBlockButtons / >
+            </apex:pageBlock> 
+                 </apex:column>
+   </apex:dataTable>
+ </apex:form>
+</apex:page>

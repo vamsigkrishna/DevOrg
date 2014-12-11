@@ -1,0 +1,20 @@
+<apex:page Controller="LeadTableController" >
+    <apex:form >
+    <apex:pageBlock >
+    <apex:pageblocksection columns="2">
+    <apex:pageBlockTable id="list" value="{!LeadTable}" var="lead" rowClasses="odd,even" cellPadding="4" border="1">
+        <apex:column ><apex:facet name="header">Name</apex:facet><apex:outputText value="{!lead.Name}"><apex:param value="{!lead.Name}"/> </apex:outputText></apex:column> 
+        <apex:column ><apex:facet name="header">Name</apex:facet></apex:column>  
+        <apex:column ><apex:facet name="header">Name</apex:facet></apex:column> 
+        <apex:column ><apex:facet name="header">Name</apex:facet></apex:column> 
+    </apex:pageBlockTable>
+    <apex:pageBlockTable id="list1" value="{!LeadTable}" var="lead" rowClasses="odd,even" cellPadding="4" border="1">
+        <apex:column value="{!lead.name}"/> 
+       <apex:column value="{!lead.name}"/> 
+       <apex:column value="{!lead.name}"/> 
+       <apex:column value="{!lead.name}"/> 
+    </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
