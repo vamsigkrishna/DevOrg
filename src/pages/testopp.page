@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity">
+    <apex:form >
+          <apex:inputText value="{!opportunity.stageName}"/>
+         <apex:inputText value="{!opportunity.closeDate}"/>
+   </apex:form>
+</apex:page>

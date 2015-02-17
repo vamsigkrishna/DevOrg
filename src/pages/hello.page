@@ -1,5 +1,7 @@
-<apex:page standardController="Case" >
+<apex:page controller="hello" >
 <apex:form >
-   <apex:inputField value="{!Case.Contact.Email}"/>
+   <apex:outputText value="{0,date,MMMM}">
+        <apex:param value="{!dynamicDate}" /> 
+   </apex:outputText>
 </apex:form>
 </apex:page>
